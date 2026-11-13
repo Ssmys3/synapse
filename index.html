@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Synapse — Associative MindMap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synapse — Infinite Associative MindMap</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 </head>
 <body>
 
   <div id="search-box">
-    <input type="text" id="wordInput" placeholder="Введите слово (напр. coffee, cat)...">
-    <button onclick="searchWord()">Исследовать</button>
+    <input type="text" id="wordInput" placeholder="explore a concept (cat, space, coffee)..." autofocus>
+    <button onclick="searchWord()">Bloom</button>
   </div>
+
+  <div id="hint-badge">✦ click any node to bloom deeper | drag to sculpt</div>
 
   <div id="mynetwork"></div>
 
